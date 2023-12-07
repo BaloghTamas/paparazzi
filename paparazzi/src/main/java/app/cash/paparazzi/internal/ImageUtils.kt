@@ -313,8 +313,7 @@ internal object ImageUtils {
   }
 
   fun getThumbnailScale(image: BufferedImage): Double {
-    val maxDimension = max(image.width, image.height)
-    return THUMBNAIL_SIZE / maxDimension.toDouble()
+    return 1.0
   }
 
   private fun setRenderingHints(g2: Graphics2D) {
